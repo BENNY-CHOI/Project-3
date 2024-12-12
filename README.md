@@ -1,10 +1,33 @@
-# 영화 서비스앱
-## 프로젝트 소개 😎
-React를 활용한 영화 서비스앱 구현 프로젝트 입니다.
+# 영화 앱 만들기
 
-## 이곳은 공개 Repo입니다.
-1. 이 repo를 fork한 뒤
-2. 여러분의 개인 Repo에서 프로젝트를 진행합니다. 
-3. 개발이 끝나면 이 Repo에 PR을 보내어 제출을 완료해주세요.
-4. 멘토님의 코드리뷰를 받습니다.
+-   [x] 코드 초기화
+-   [x] 메인 기초 작업, 데미데이터 연동
+-   [x] 상세, 메인 리스트 API 연동
+-   [x] 영화 서브페이지 타입별 목록 API 연동
+-   [x] 테일윈드CSS 도입
+-   [x] 메인 슬라이드, 스타일 작업, 네비바 스타일 작업
+-   [x] 상세페이지 스타일 작업
+-   [x] 서브페이지 카드 컴포넌트, 스타일 작업
+-   [x] 검색기능
+-   [x] 검색 스타일 작업
+-   [x] 카드 컴포넌트 분리
 
+## 테일윈드 적용
+
+-   [vite + tailwindcss](https://tailwindcss.com/docs/guides/vite)
+
+```js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from 'tailwindcss'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+    plugins: [react()],
+    css: {
+        postcss: {
+            plugins: [tailwindcss()],
+        },
+    },
+})
+```
